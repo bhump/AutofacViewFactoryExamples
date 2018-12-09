@@ -8,7 +8,7 @@ using DependencyInjectionExamples.Repositories;
 using DependencyInjectionExamples.ViewModels;
 using Xamarin.Forms;
 
-namespace DependencyInjectionExamples
+namespace DependencyInjectionExamples.Views
 {
     public partial class MainPage : TabbedPage
     {

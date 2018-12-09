@@ -21,6 +21,7 @@
     <Folder Include="Interfaces\" />
     <Folder Include="Services\" />
     <Folder Include="Factories\" />
+    <Folder Include="Renderers\" />
   </ItemGroup>
   <ItemGroup>
     <EmbeddedResource Remove="Views\CustomNavigationView.xaml" />

@@ -10,12 +10,14 @@ namespace DependencyInjectionExamples.Repositories
         {
         }
 
-        public IEnumerable<string> GetNotifications()
+        public List<string> GetNotifications()
         {
-            var list = new List<string>();
-            list.Add("Profile added.");
-            list.Add("Profile updated.");
-            list.Add("Profile deleted.");
+            var list = new List<string>
+            {
+                "Profile added.",
+                "Profile updated.",
+                "Profile deleted."
+            };
 
             return list;
         }

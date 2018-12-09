@@ -1,8 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<ContentPage xmlns="http://xamarin.com/schemas/2014/forms" xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" x:Class="DependencyInjectionExamples.Views.NotificationPage" Title="Notifications">
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms" xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" x:Class="DependencyInjectionExamples.Views.NotificationPage" xmlns:renderers="clr-namespace:DependencyInjectionExamples.Renderers" Title="Notifications">
     <ContentPage.Content>
-        <ListView ItemsSource="{Binding Notifications}">
-            
-        </ListView>
+        <StackLayout>
+            <renderers:CustomSearchBar Placeholder="Search" Text="{Binding SearchText}" HeightRequest="50"/>
+            <ListView ItemsSource="{Binding Notifications}">
+            </ListView>
+        </StackLayout>
     </ContentPage.Content>
 </ContentPage>

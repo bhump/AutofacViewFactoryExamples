@@ -5,6 +5,6 @@ namespace DependencyInjectionExamples.Interfaces
 {
     public interface INotificationRepository
     {
-        IEnumerable<string> GetNotifications();
+        List<string> GetNotifications();
     }
 }
